@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-	#association 
+	#association between model using polymorphism
 	has_many :microposts, dependent: :destroy
 
 	has_many :active_relationships, class_name: "Relationship",
